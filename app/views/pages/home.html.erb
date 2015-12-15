@@ -2,9 +2,38 @@
   <div class="row">
     <div id="owl-home" class="owl-carousel owl-theme">
 
-      <div class="item"><%= image_tag "home/1.jpg"  %></div>
-      <div class="item"><%= image_tag "home/2.jpg" %></div>
-      <!--<div class="item"><%= image_tag "c.jpg" %></div>-->
+      <div class="item">
+        <div  class="overlay">
+          <div class="overlay-cover">
+          </div>
+          <div class="overlay-text-box">
+            <div class="overlay-text-box-inner">
+              <h1>NUS Students' Computing Club</h1>
+              <div>
+                <a class="button secondary round" href="/about">About Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%= image_tag "home/1.jpg"  %>
+      </div>
+
+      <div class="item">
+        <div  class="overlay">
+          <div class="overlay-cover">
+          </div>
+          <div class="overlay-text-box">
+            <div class="overlay-text-box-inner">
+              <h1>NUS Students' Computing Club</h1>
+              <div>
+                <a class="button secondary round" href="/about">About Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <%= image_tag "home/2.jpg" %>
+      </div>
+
     </div>
   </div>
 </section>
@@ -38,3 +67,7 @@
     </div>
   </div>
 </section>
+
+<div class="row">
+  <hr>
+</div>

@@ -1,9 +1,11 @@
 /* BEGIN */
 // Custom Styling for home page carousel
+
 #owl-home .item img {
   display: block;
   width: 100%;
   height: auto;
+  opacity: 0;
 }
 
 #owl-home .item {
@@ -11,6 +13,41 @@
   width: 100%;
   position: relative;
   height: auto;
+  background: url("<%= asset_path "home/1" %>");
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+#owl-home .item .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#owl-home .item .overlay-cover {
+  position: absolute;
+  background: aliceblue;
+  opacity: 0.4;
+  height: 100%;
+  width: 100%;
+}
+
+#owl-home .item .overlay-text-box {
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+}
+
+#owl-home .item .overlay-text-box .overlay-text-box-inner {
+  text-align: center;
+}
+
+#owl-home .item .overlay h1 {
+  color: black;
 }
 
 
